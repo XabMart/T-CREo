@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "T-CREo",
+  "version": "1.0",
+  "description": "Extension para obtener la credibilidad de cuentas de Twitter",
+  "icons": {
+    "16": "src/images/icon16.png",
+    "32": "src/images/icon32.png",
+    "48": "src/images/icon48.png",
+    "128": "src/images/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "declarativeContent",
+    "storage",
+    "contextMenus",
+    "http://localhost:5000/",
+    "https://twitter.com/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "src/images/icon16.png",
+      "32": "src/images/icon32.png",
+      "48": "src/images/icon48.png",
+      "128": "src/images/icon128.png"
+    },
+    "default_title": "T-CREo",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["jquery-3.6.4.min.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-3.6.4.min.js"
+  ]
+}

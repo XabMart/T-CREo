@@ -1,0 +1,5 @@
+{
+  "min_words": 5,
+  "max_percent_caps": 50,
+  "max_num_swear_words": 2
+}

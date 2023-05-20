@@ -1,0 +1,5 @@
+{
+  "bad_words_weight": 0.2,
+  "spell_errors_weight": 0.4,
+  "spam_weight": 0.4
+}

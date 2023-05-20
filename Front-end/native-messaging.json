@@ -1,0 +1,9 @@
+{
+  "name": "com.myextension.myapp",
+  "description": "Native messaging host for MyExtension",
+  "path": "real-time-credibility.py",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://your_extension_id/"
+  ]
+}
